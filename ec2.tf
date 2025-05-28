@@ -306,3 +306,8 @@ output "public_subnet2" {
   description = "The ID of the Public subnet"
   value       = aws_subnet.web_subnet2.id
 }
+
+module "s3-bucket" {
+  source  = "cloudposse/s3-bucket/aws"
+  version = "2.0.0"
+}
